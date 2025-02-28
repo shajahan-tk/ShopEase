@@ -3,7 +3,7 @@ import { FaBars, FaTimes } from "react-icons/fa";
 import Home from "../Pages/Home";
 import AddProduct from "./AddProduct";
 import ProductsPage from "./ProductsPage";
-import ContactPage from "./ContactsPAge";
+
 
 const Navbar = () => {
   const [activeTab, setActiveTab] = useState("Home");
@@ -27,7 +27,7 @@ const Navbar = () => {
 
           {/* Desktop Tab Bar */}
           <div className="hidden md:flex space-x-4">
-            {["Home", "Products", "contact", "about", "AddProduct"].map((tab) => (
+            {["Home", "Products","about", "AddProduct"].map((tab) => (
               <button
                 key={tab}
                 onClick={() => setActiveTab(tab)}
@@ -54,7 +54,7 @@ const Navbar = () => {
         {/* Mobile Menu */}
         {menuOpen && (
           <div className="md:hidden bg-white shadow-md">
-            {["Home", "Products", "contact", "about", "AddProduct"].map((tab) => (
+            {["Home", "Products","about", "AddProduct"].map((tab) => (
               <button
                 key={tab}
                 onClick={() => {
@@ -81,7 +81,7 @@ const Navbar = () => {
         {activeTab === "Home" && <Home />}
         {activeTab === "Products" && <ProductsPage />}
         {activeTab === "AddProduct" && <AddProduct />}
-        {activeTab === "contact" && <ContactPage />}
+     
       </div>
     </div>
   );
