@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-const womenCategories = ["Clothes", "Accessories", "Makeup", "Chappals", "Innerwears"];
+const womenCategories = ["Clothes", "Accessories", ];
 
 export default function Women() {
   const [activeTab, setActiveTab] = useState("Clothes");
@@ -32,8 +32,8 @@ export default function Women() {
         {activeTab === "Clothes" && <Clothes />}
         {activeTab === "Accessories" && <Accessories />}
         {activeTab === "Makeup" && <Makeup />}
-        {activeTab === "Chappals" && <Chappals />}
-        {activeTab === "Innerwears" && <Innerwears />}
+        {/* {activeTab === "Chappals" && <Chappals />}
+        {activeTab === "Innerwears" && <Innerwears />} */}
       </div>
     </div>
   );
@@ -242,17 +242,17 @@ const Makeup = () => (
   </div>
 );
 
-const Chappals = () => (
-  <div className="text-center">
-    <h2 className="text-2xl font-semibold text-purple-700">Chappals</h2>
-    <p className="text-gray-600 mt-2">Comfortable and trendy footwear collections.</p>
-  </div>
-);
+// const Chappals = () => (
+//   <div className="text-center">
+//     <h2 className="text-2xl font-semibold text-purple-700">Chappals</h2>
+//     <p className="text-gray-600 mt-2">Comfortable and trendy footwear collections.</p>
+//   </div>
+// );
 
-const Innerwears = () => (
-  <div className="text-center">
-    <h2 className="text-2xl font-semibold text-purple-700">Innerwears</h2>
-    <p className="text-gray-600 mt-2">Premium innerwear collections for women.</p>
-  </div>
-);
+// const Innerwears = () => (
+//   <div className="text-center">
+//     <h2 className="text-2xl font-semibold text-purple-700">Innerwears</h2>
+//     <p className="text-gray-600 mt-2">Premium innerwear collections for women.</p>
+//   </div>
+// );
 

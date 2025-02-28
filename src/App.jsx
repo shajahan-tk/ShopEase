@@ -8,7 +8,8 @@ import ProductsPage from "./Components/ProductsPage";
 import Women from "./Pages/Catogaries/Women";
 import Men from "./Pages/Catogaries/Men";
 import Kids from "./Pages/Catogaries/Kids";
-import ContactPage from "./Components/ContactsPAge";
+import ContactNew from "./Components/ContactsNew";
+
 
 const App = () => {
   return (
@@ -20,7 +21,7 @@ const App = () => {
             <Route path="/home" element={<Home />} />
             <Route path="/add-product" element={<AddProduct />} />
             <Route path="/products" element={<ProductsPage />} />
-            <Route path="/contact" element={<ContactPage />} />
+            <Route path="/contact" element={<ContactNew/>} />
             <Route path="/women" element={<Women />} />
             <Route path="/men" element={<Men />} />
             <Route path="/kids" element={<Kids />} />
