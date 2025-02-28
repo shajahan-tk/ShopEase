@@ -8,7 +8,7 @@ import ProductsPage from "./Components/ProductsPage";
 import Women from "./Pages/Catogaries/Women";
 import Men from "./Pages/Catogaries/Men";
 import Kids from "./Pages/Catogaries/Kids";
-import ContactNew from "./Components/ContactsNew";
+import ContactNew from "./Components/ContactNew";
 
 
 const App = () => {
